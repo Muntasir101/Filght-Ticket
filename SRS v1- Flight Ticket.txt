@@ -1,0 +1,37 @@
+Flat rate for flights less than 500 miles = $100
+
+1. calculate cost based on distance and departure date for flights between 500 and 
+1000 miles
+    1. 10 cents per mile if departing within 7 days
+    2. 8 cents per mile if departing within 30 days
+    3. 6 cents per mile if departing within 90 days
+
+2. calculate cost based on distance, departure date, and service class for flights over 
+1000 miles
+    30 cents per mile if departing within 7 days
+    25 cents per mile if departing within 30 days
+    20 cents per mile if departing within 90 days
+
+3. Seat Class flight more then 500 mile
+    1. not Applicable Economy class
+    2. double the cost for Business class
+    3. triple the cost for First class
+	
+4. Additional Cost for baggage
+	1. For flight less than 500, there is not additional cost for extra baggage
+	2. For flight between 500 and 1000, the cost for extra baggage is $25 per kg
+	3. For flight over 1000, the cost for extra baggage is $50 per bag	
+    Maximum 50 Kg
+
+5. Calculate the cost based on taxes:
+
+	1. Apply a tax rate of 10% on the total flight cost (including all additional costs).
+
+6. Calculate the cost based on discounts:
+
+	1. If the total flight cost (including all additional costs and taxes) exceeds $1000, 
+		apply a discount of 5% on the total cost.
+	2. If the total flight cost (including all additional costs and taxes) exceeds $2000, 
+		apply a discount of 10% on the total cost.
+
+
