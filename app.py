@@ -14,7 +14,7 @@ def flight_cost_calculator():
     if request.method == 'POST':
         distance = int(request.form['distance'])
         departure_date = request.form['departure_date']
-        baggage = int(request.form['baggage'])
+        baggage = float(request.form['baggage'])
         cost = 0
 
         if distance < 500:
@@ -42,7 +42,7 @@ def flight_cost_calculator():
             elif seat_class == 'First':
                 cost *= 3
 
-        if distance >= 500 and distance <= 1000:
+        if 500 <= distance <= 1000:
             extra_baggage_cost = baggage * 25
         elif distance > 1000:
             extra_baggage_cost = baggage * 50
@@ -75,4 +75,4 @@ def departure_date_within_days(departure_date, num_days):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')

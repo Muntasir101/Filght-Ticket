@@ -22,6 +22,9 @@
         .btn {
             width: 100%;
         }
+        body{
+
+        }
     </style>
 </head>
 <body>
@@ -30,7 +33,7 @@
         <form method="POST" action="/calculator">
             <div class="form-group">
                 <label for="distance">Distance (in miles):</label>
-                <input type="number" class="form-control" id="distance" name="distance" required>
+                <input type="number" class="form-control" id="distance" name="distance" min="0" required>
             </div>
             <div class="form-group">
                 <label for="departure-date">Departure Date</label>
@@ -39,7 +42,7 @@
             </div>
             <div class="form-group">
                 <label for="baggage">Extra Baggage (in kg):</label>
-                <input type="number" class="form-control" id="baggage" name="baggage" required>
+                <input type="number" step="any" class="form-control" id="baggage" name="baggage" min="0" required>
             </div>
             <div class="form-group">
                 <label for="seat_class">Seat Class:</label>
@@ -50,6 +53,7 @@
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Calculate Cost</button>
+
         </form>
     </div>
     <script>
